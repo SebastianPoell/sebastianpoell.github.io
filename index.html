@@ -1,1 +1,165 @@
-Hello World
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sebuelius Aurelius">
+    <title>Rails Development & Consulting</title>
+
+    <style>
+      @font-face {
+        font-family: "Lato";
+        src: url("fonts/Lato-Regular.ttf") format("truetype");
+      }
+
+      body {
+        opacity: 0;
+        transition: opacity 1s;
+        min-height: 100vh;
+        margin: 0px 0px;
+      }
+
+      .background-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.05;
+        background-image: url("images/sebi.jpeg");
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: left center;
+      }
+
+      @media only screen and (min-width: 1150px) {
+        .background-image {
+          opacity: 1;
+        }
+      }
+
+      .container {
+        font-family: "Lato";
+        font-size: 1.5em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        min-width: 300px;
+      }
+
+      @media only screen and (min-width: 1150px) {
+        .container {
+          padding-left: 57%;
+          padding-right: 0;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+
+      .contact {
+        margin-top: 20px;
+        line-height: 1.5em;
+      }
+
+      .contact a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .contact a:hover {
+        text-decoration: underline;
+      }
+
+      .images {
+        margin-top: 20px;
+      }
+
+      .images a {
+        display: inline-block;
+        text-decoration: none;
+        transition: transform 0.2s;
+      }
+
+      .images a:hover {
+        transform: scale(1.1);
+      }
+
+      .images img {
+        max-height: 35px;
+        margin-right: 15px;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      footer a {
+        color: #999;
+        text-decoration: none;
+        font-family: "Lato";
+      }
+
+      footer a:hover {
+        color: #555;
+      }
+
+      .separator {
+        color: #999;
+      }
+    </style>
+  </head>
+
+  <body onload="document.body.style.opacity='1'">
+
+    <div class="background-image">
+    </div>
+
+    <div class="container">
+      <h2>
+        Ruby/Rails
+        <br>
+        Development & Consulting
+      </h2>
+
+      <div class="contact">
+        Dipl. Ing. Sebastian Pöll
+        <br/>
+        <a href="mailto:hello@skyrail.dev">
+          hello@skyrail.dev
+        </a>
+        <br/>
+        Vienna AT
+      </div>
+
+      <div class="images">
+        <a href="https://www.ruby-lang.org/">
+          <img src="images/ruby.png" alt="ruby" />
+        </a>
+
+        <a href="https://rubyonrails.org/">
+          <img src="images/rails.png" alt="rails" />
+        </a>
+
+        <a href="https://github.com/SebastianPoell">
+          <img src="images/github.png" alt="github" />
+        </a>
+
+        <a href="https://www.linkedin.com/in/sebastian-p%C3%B6ll-088aa4236/">
+          <img src="images/linkedin.png" alt="linkedin" />
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <a href="imprint.html">Imprint</a>
+      <span class="separator"> | </span>
+      <a href="privacy.html">Privacy</a>
+    </footer>
+  </body>
+</html>
