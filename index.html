@@ -37,7 +37,7 @@
         background-position: left center;
       }
 
-      @media only screen and (min-width: 1150px) {
+      @media only screen and (min-width: 1050px) {
         .background-image {
           opacity: 1;
         }
@@ -45,22 +45,24 @@
 
       .container {
         font-family: "Lato";
-        font-size: 1.5em;
+        font-size: 1.3em;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: left;
-        min-width: 300px;
+        min-width: 270px;
       }
 
-      @media only screen and (min-width: 1150px) {
+      @media only screen and (min-width: 1050px) {
         .container {
+          font-size: 1.5em;
           padding-left: 57%;
           padding-right: 0;
           top: 50%;
           left: 0;
           transform: translateY(-50%);
+          min-width: 300px;
         }
       }
 
@@ -93,8 +95,15 @@
       }
 
       .images img {
-        max-height: 35px;
+        max-height: 25px;
         margin-right: 15px;
+      }
+
+      @media only screen and (min-width: 1050px) {
+        .images img {
+          max-height: 35px;
+          margin-right: 15px;
+        }
       }
 
       footer {
@@ -156,6 +165,10 @@
 
         <a href="https://www.linkedin.com/in/sebastian-p%C3%B6ll-088aa4236/">
           <img src="images/linkedin.png" alt="linkedin" />
+        </a>
+
+        <a href="https://livevoice.io">
+          <img src="images/livevoice.png" alt="linkedin" />
         </a>
       </div>
     </div>
